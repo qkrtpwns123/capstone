@@ -16,8 +16,8 @@ test_btn.addEventListener('click', async (e) => {
     nm2.innerText = `학생 ${name} 기록` 
     for(start=0; start<recordload.length; start++){
       record.innerHTML += (`<div class="student-record-container">
-          <div class="flex-item record"><a id="text">${recordload[start].webapp_name}</a></div>
           <div class="flex-item record"><a id="text">날짜:${recordload[start].datetime}<br>사용시간:${recordload[start].time}</a></div>
+          <div class="flex-item record"><a id="text">${recordload[start].webapp_name}</a></div>
         </div>`)
     }
   } catch (error) {}

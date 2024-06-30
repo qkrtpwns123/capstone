@@ -32,6 +32,9 @@ app.on('ready', async () => {
     const window = await activeWin();
     try {
       let today = await getCurrentTime();
+      // if(today.getHours() < 8 || today.getHours() > 20){process.exit()}
+      // if(on_time_minutes[0] == today.getMinutes()){on_time_switch = false}
+      // else if(on_time_minutes[1] == today.getMinutes() || on_time_minutes[2] == today.getMinutes()){on_time_switch = true}
       if (title !== window.title && window.title !== "" && on_time_switch == true) {
         if (time >= 0) {
           sql = 'INSERT INTO document (id,class_num, datetime, webapp_name, time) VALUES(null,?, ?, ?, ?)';

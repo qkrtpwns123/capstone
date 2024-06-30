@@ -1,0 +1,66 @@
+*{
+    margin: 0 auto;
+}
+
+.background{
+    background-color: #DBEBF8;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+}    
+
+.image{
+    width: 90px;
+    top: 50px;
+    position: absolute;
+} 
+
+.text{
+    font-size: 20px;
+    color: #075690;
+    white-space: pre-line;
+    top: 34vh;
+    position: absolute;
+}
+
+.idpass::placeholder{
+  color: #A7A7A7;
+}
+
+.idpass{
+    font-size: 100%;
+    color: black;
+    border-radius: 22px;
+    height: 30px;
+    width: 300px;
+    margin: 15px;
+    top: 50vh;
+    border-width: 0;
+    position: relative;
+    justify-content: center; 
+    display: flex;
+    padding-left: 0.4cm;
+
+  }
+
+.btn:active{
+  background-color: #025087;
+}
+
+.btn{
+  color: white;
+  background-color: #075690;
+  display: flex;
+  align-items:center; 
+  top: 50vh;
+  height: 30px;
+  width: 200px;
+  display: flex;
+  border-width: 0;
+  position: relative;
+  border-radius: 22px;
+  justify-content: center; 
+}

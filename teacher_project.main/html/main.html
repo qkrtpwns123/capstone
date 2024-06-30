@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>See</title>
+  <style>
+    .active {
+      color: #000000;
+    }
+    .inactive {
+      color: #B3B3B3;
+    }
+  </style>
+</head>
+<body style="-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none">
+  <div class="background">
+    <img class="image" src="../img/see.png">  
+      
+    <div id="btn1" class="html1">
+      <div class="student-info">
+          <form class="student">
+            <input type="text" class="student-grade" id="grade" placeholder="학년"></input>
+            <input type="text" class="student-class" id="class" placeholder="반"></input>
+            <input type="text" class="student-number" id="number" placeholder="번호"></input>
+            <input id="test_btn" type="submit" class="search"></input>
+          </form>
+        <div class="student-name" id="nm"></div>
+      </div>
+      
+      <div class="student-record" id="record">
+        <div class="student-name2" id="nm2"></div>
+        <!-- <div class="student-record-container">
+          <div class="flex-item record"><a id="text">ㅁㄴㅇ</a></div>
+          <div class="flex-item record">asd</div>
+        </div> -->
+      </div>
+    </div>
+  </div> 
+    <div id="btn2" class="html2"></div>
+    <div class="righttext">
+      <a onclick="toggleBtn1()" class="button active" id="student">학생 활동</a>
+      <!-- <a onclick="toggleBtn2()" class="button inactive" id="blacklist">블랙리스트</a> -->
+    </div>
+  </div>
+ <script src="../js/main_renderer.js"></script>
+  <script>
+    // const btn1 = document.getElementById('btn1');
+    // const btn2 = document.getElementById('btn2');
+    // const student = document.getElementById('student');
+    // const blacklist = document.getElementById('blacklist');
+
+    // function toggleBtn1() {
+    //   btn1.style.visibility = 'visible';
+    //   btn2.style.visibility = 'hidden';
+    //   student.classList.add('active');
+    //   student.classList.remove('inactive');
+    //   blacklist.classList.add('inactive');
+    //   blacklist.classList.remove('active');
+    // }
+
+    // function toggleBtn2() {
+    //   btn2.style.visibility = 'visible';
+    //   btn1.style.visibility = 'hidden';
+    //   blacklist.classList.add('active');
+    //   blacklist.classList.remove('inactive');
+    //   student.classList.add('inactive');
+    //   student.classList.remove('active');
+    // }
+  </script>
+</body>
+</html>
